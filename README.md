@@ -1,1 +1,1 @@
-# test_pracuj_pl
+# Automatic tests of selected website functionalities pracuj.pl
