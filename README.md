@@ -4,7 +4,7 @@
 ### System requirements
 Works with Windows and Windows Subsystem for Linux (WSL). MacOS: Requires 10.14 (Mojave) or above. Linux: Depending on your Linux distribution, you might need to install additional dependencies to run the browsers.
 
-`pip install --upgrade pip`888
+`pip install --upgrade pip`
 `pip install playwright`
 `pip install pytest-playwright`
 
