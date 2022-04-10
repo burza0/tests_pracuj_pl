@@ -9,7 +9,7 @@
 
 2. Verification of search results for logged in and not logged in user
 
-* [Comparison of results for logged in and not logged in user](#general-information) 
+* [comparison of results for logged in and not logged in user](#general-information) 
 
 3. Verification of searches for a selected city
 
