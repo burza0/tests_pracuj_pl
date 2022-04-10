@@ -4,7 +4,7 @@
 
 1. Checking the visibility of all elements of the login form 
 
-* [Display all fields, buttons and links](#general-information)
+* [display all fields, buttons and links](#general-information)
 
 2. Verification of login with valid data 
 
