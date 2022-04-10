@@ -4,8 +4,8 @@
 
 1. Verification of the search result for several phrases given in different orders
 
-* [Searching for two different phrases](#general-information) 
-* [Searching for three different phrases](#general-information) 
+* [searching for two different phrases](#general-information) 
+* [searching for three different phrases](#general-information) 
 
 2. Verification of search results for logged in and not logged in user
 
