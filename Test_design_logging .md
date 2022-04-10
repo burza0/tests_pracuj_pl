@@ -6,7 +6,7 @@
 
 * [Display all fields, buttons and links](#general-information)
 
-2. Verification of login with correct data 
+2. Verification of login with valid data 
 
 * [login with a valid username and password](#general-information)
 
