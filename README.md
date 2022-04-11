@@ -18,7 +18,7 @@ Works with Windows and Windows Subsystem for Linux (WSL). MacOS: Requires 10.14 
 - Improve automated testing skills
 
 ## Technologies Used
-- Python 3.1
+- Python 3.9
 - Playwright 1.20.1
 - Pytest 7.1.1
 - Pytest-playwright 0.3.0
