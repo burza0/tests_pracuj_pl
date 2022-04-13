@@ -35,3 +35,6 @@ def test_wrong_username(page):
     page.locator("[data-test=\"input-password\"]").fill("qwertyuiop")
     page.locator("[data-test=\"button-login\"]").click()
 
+    locator = page.locator(
+        "//div[.='Uwzględnij znak „@” w adresie e-mail. W adresie „dgfdgdfgdfgdf” brakuje znaku „@”.']")
+    expect(locator).to_be_visible()
