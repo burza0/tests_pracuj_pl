@@ -22,13 +22,13 @@ def test_visibility(page, locators=None, locators2=None, locators3=None, locator
             locators3 = page.locator("[data-test=\"button-login\"]")
             assert_that(locators3).is_true()
         else:
-            assert_that(locators3).described_as('!!!!!!!!!!!!!!!No selector required!!!!!!!!!!!!!!!').is_true()
+            assert_that(locators3).described_as('!!!!!!!!!!!!!!!No button required!!!!!!!!!!!!!!!').is_true()
 
         if page.locator("[data-test=\"button-login-facebook\"]").is_visible():
             locators4 = page.locator("[data-test=\"button-login-facebook\"]")
             assert_that(locators4).is_true()
         else:
-            assert_that(locators4).described_as('!!!!!!!!!!!!!!!No selector required!!!!!!!!!!!!!!!').is_true()
+            assert_that(locators4).described_as('!!!!!!!!!!!!!!!No button required!!!!!!!!!!!!!!!').is_true()
 
         if page.locator("text= Nie masz konta? Zarejestruj się").is_visible():
             locators5 = page.locator("text= Nie masz konta? Zarejestruj się")
