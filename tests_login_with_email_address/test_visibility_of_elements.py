@@ -3,43 +3,25 @@ from assertpy import assert_that, soft_assertions
 
 
 def test_visibility(page):
+    page.goto("https://login.pracuj.pl/")
+
     with soft_assertions():
+        email_input_loc = page.locator("[data-test=\"input-email\"]")
+        assert_that(email_input_loc.is_visible()).described_as("E-mail input is not visible").is_true()
 
-        # page.goto("https://login.pracuj.pl/")
+        pass_input_loc = page.locator("[data-test=\"input-password\"]")
+        assert_that(pass_input_loc.is_visible()).described_as("Password input is not visible").is_true()
 
-        locators = page.locator("[data-test=\"input-email\"]")
-        locators2 = page.locator("[data-test=\"input-password\"]")
-        locators3 = page.locator("[data-test=\"button-login\"]")
-        locators4 = page.locator("[data-test=\"button-login-facebook\"]")
-        locators5 = page.locator("text= Nie masz konta? Zarejestruj się")
-        locators6 = page.locator("text=Jesteś pracodawcą? Zaloguj się do Pracuj.pl dla Firm launch")
+        button_log_loc = page.locator("[data-test=\"button-login\"]")
+        assert_that(button_log_loc.is_visible()).described_as("Button-login is not visible").is_true()
 
-        if page.locator("[data-test=\"input-email\"]").is_visible():
-            assert_that(locators).is_true()
-        else:
-            assert_that(locators).described_as('!!!!!!!!!!!!!!!No selector required!!!!!!!!!!!!!!!').is_true()
+        button_face_loc = page.locator("[data-test=\"button-login-facebook\"]")
+        assert_that(button_face_loc.is_visible()).described_as("Button-login-facebook is not visible").is_true()
 
-        if page.locator("[data-test=\"input-password\"]").is_visible():
-            assert_that(locators2).is_true()
-        else:
-            assert_that(locators2).described_as('!!!!!!!!!!!!!!!No selector required!!!!!!!!!!!!!!!').is_true()
+        register_link_loc = page.locator("text= Nie masz konta? Zarejestruj się")
+        assert_that(register_link_loc.is_visible()).described_as("Link 'Zarejestruj się' is not visible").is_true()
 
-        if page.locator("[data-test=\"button-login\"]").is_visible():
-            assert_that(locators3).is_true()
-        else:
-            assert_that(locators3).described_as('!!!!!!!!!!!!!!!No button required!!!!!!!!!!!!!!!').is_true()
+        login_for_business_loc = page.locator("text=Jesteś pracodawcą? Zaloguj się do Pracuj.pl dla Firm launch")
+        assert_that(login_for_business_loc.is_visible()).described_as("Link 'Pracuj.pl dla Firm' is not visible").is_true()
 
-        if page.locator("[data-test=\"button-login-facebook\"]").is_visible():
-            assert_that(locators4).is_true()
-        else:
-            assert_that(locators4).described_as('!!!!!!!!!!!!!!!No button required!!!!!!!!!!!!!!!').is_true()
 
-        if page.locator("text= Nie masz konta? Zarejestruj się").is_visible():
-            assert_that(locators5).is_true()
-        else:
-            assert_that(locators5).described_as('!!!!!!!!!!!!!!!No selector required!!!!!!!!!!!!!!!').is_true()
-
-        if page.locator("text=Jesteś pracodawcą? Zaloguj się do Pracuj.pl dla Firm launch").is_visible():
-            assert_that(locators6).is_true()
-        else:
-            assert_that(locators6).described_as('!!!!!!!!!!!!!!!No selector required!!!!!!!!!!!!!!!').is_true()
