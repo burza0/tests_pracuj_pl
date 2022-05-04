@@ -3,7 +3,7 @@ from playwright.sync_api import expect
 
 
 @pytest.mark.parametrize(
-    'input_email', (pytest.param('bond47647gmail.com', id='bond47647gmail.com  - invalid address'),
+    'input_email', (pytest.param('123456789@gmail.com', id='123456789@gmail.com  - invalid address'),
                     pytest.param('bond47647@gmail.com', id='bond47647@gmail.com  - valid address'),
                     pytest.param('dsfdsfsdfs@wp.pl', id='dsfdsfsdfs@wp.pl - unregistered user')))
 def test_password_recovery(page, input_email):
