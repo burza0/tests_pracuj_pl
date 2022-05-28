@@ -4,7 +4,7 @@
 
 1. Checking the visibility of all elements of the login form 
 
-* [display all fields, buttons and links](https://docs.github.com)
+* [display all fields, buttons and links]([https://docs.github.com](https://github.com/burza0/tests_pracuj_pl/blob/tests-patch-3/tests_login_with_email_address/test_visibility_of_elements.py)
 
 2. Verification of login with valid data 
 
