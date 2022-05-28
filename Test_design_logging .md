@@ -8,18 +8,18 @@
 
 2. Verification of login with valid data 
 
-* [login with a valid username and password](#general-information)
+* [login with a valid username and password](https://github.com/burza0/tests_pracuj_pl/blob/tests-patch-3/tests_login_with_email_address/test_valid_login.py)
 
 3. Verification of login with invalid data 
 
-* [login with blank email address and password](#general-information) 
-* [unregistered user login](#general-information) 
-* [login with wrong username](#general-information) 
+* [login with blank email address and password](https://github.com/burza0/tests_pracuj_pl/blob/tests-patch-3/tests_login_with_email_address/test_invalid_login_details.py)
+* [unregistered user login](https://github.com/burza0/tests_pracuj_pl/blob/tests-patch-3/tests_login_with_email_address/test_invalid_login_details.py) 
+* [login with wrong username](https://github.com/burza0/tests_pracuj_pl/blob/tests-patch-3/tests_login_with_email_address/test_invalid_login_details.py) 
 
 4. Verification of forgotten password recovery
 
-* [password recovery for a registered user](#general-information) 
-* [password recovery for unregistered user](#general-information) 
+* [password recovery for a registered user](https://github.com/burza0/tests_pracuj_pl/blob/tests-patch-3/tests_login_with_email_address/test_forgotten%20password%20recovery.py) 
+* [password recovery for unregistered user](https://github.com/burza0/tests_pracuj_pl/blob/tests-patch-3/tests_login_with_email_address/test_forgotten%20password%20recovery.py) 
 
 5. Verification of the correctness of validation messages
 
@@ -30,4 +30,4 @@
 
 6. Verify that the "Pokaż/Ukryj hasło" option is working correctly.
 
-* [showing the hidden password](#general-information)
+* [showing the hidden password](https://github.com/burza0/tests_pracuj_pl/blob/tests-patch-3/tests_login_with_email_address/test_verify_show_hide_password.py)
